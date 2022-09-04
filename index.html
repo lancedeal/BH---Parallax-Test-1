@@ -32,13 +32,19 @@
 
     </div>
 
+    <div class="slow-div">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cursus vitae congue mauris rhoncus aenean vel elit scelerisque mauris.
+    </div>
+
     <script>
 
         const mayn = document.querySelector('main')
+        const div = document.querySelector('.slow-div')
 
         window.addEventListener('scroll', e => {
 
-            mayn.style.transform = `translate3d(0px, ${window.pageYOffset * 0.7}px, 0px)`
+            mayn.style.transform = `translate3d(0px, ${window.pageYOffset * .8}px, 0px)`
+            div.style.transform = `translate3d(0px, ${window.pageYOffset * .7}px, 0px)`
 
         })
 
